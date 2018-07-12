@@ -6,9 +6,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	
 	<%@ include file="../common/common.jsp" %>
 	<script>
-		
+		$(function(){
+			$("#loginBtn").on('click', function(){
+				alert('abcd');				
+			});
+		});
 	</script>
 	
 </head>

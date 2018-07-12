@@ -22,8 +22,7 @@ public class MainController {
 		
 		try{ 
 			String userIp = WebUtil.getUserIP(request);
-			
-			
+						
 			
 			
 		}catch(Exception e){

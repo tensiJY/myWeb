@@ -1,8 +1,12 @@
 package com.web.persistence;
 
-import org.springframework.stereotype.Repository;
+import java.util.List;
 
-@Repository
+import com.web.domain.BoardVO;
+
+
 public interface BoardDAO {
+
+	public List<BoardVO> getBoardList() throws Exception;
 
 }

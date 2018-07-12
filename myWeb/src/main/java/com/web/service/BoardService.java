@@ -1,8 +1,11 @@
 package com.web.service;
 
-import org.springframework.stereotype.Service;
+import java.util.List;
 
-@Service
+import com.web.domain.BoardVO;
+
 public interface BoardService {
+
+	public List<BoardVO> getBoardList() throws Exception;
 
 }

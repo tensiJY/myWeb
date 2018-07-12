@@ -86,7 +86,8 @@
     </div>
 </div>
 
-
+<c:set var="num" value="100"/>
+<c:out value="${num}"/>
 
 
 </body>

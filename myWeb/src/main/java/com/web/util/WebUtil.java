@@ -58,10 +58,20 @@ public class WebUtil {
 
 	}
 	
-	public static String getId(HttpSession session){
-		return (String)session.getAttribute("UID");		
+	public static String getId(HttpSession session, String sessionId){
+		return (String)session.getAttribute("sessionId");		
 	}
 	
+	public static boolean idIsNull(HttpSession session, String sessionId){
+		
+		String id = (String)session.getAttribute(sessionId);
+		
+		if(id==null){
+			return true;
+		}else{
+			return false;
+		}
+	}
 	
 	
 //	public static String getCurrentEnvironmentNetworkIp(){
